@@ -18,6 +18,9 @@
 		8340F47B22F886B700A73914 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8340F47722F886B700A73914 /* Montserrat-Regular.ttf */; };
 		8340F47C22F886B700A73914 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8340F47822F886B700A73914 /* Montserrat-SemiBold.ttf */; };
 		8340F47F22F8906F00A73914 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8340F47E22F8906F00A73914 /* ColorAssets.xcassets */; };
+		8340F48222F904D600A73914 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48122F904D600A73914 /* SignUpViewController.swift */; };
+		8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */; };
+		8340F48622F9066800A73914 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48522F9066800A73914 /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		8340F47722F886B700A73914 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8340F47822F886B700A73914 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		8340F47E22F8906F00A73914 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		8340F48122F904D600A73914 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		8340F48522F9066800A73914 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBlob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBlob.release.xcconfig"; path = "Target Support Files/Pods-SocialBlob/Pods-SocialBlob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +132,7 @@
 		8340F47022F87CF800A73914 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				8340F45D22F86D4700A73914 /* Main.storyboard */,
+				8340F48022F904A200A73914 /* Auth */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -150,6 +156,17 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		8340F48022F904A200A73914 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8340F45D22F86D4700A73914 /* Main.storyboard */,
+				8340F48122F904D600A73914 /* SignUpViewController.swift */,
+				8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */,
+				8340F48522F9066800A73914 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		9547C9C8C4ED4FD4FD60A994 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +181,6 @@
 				55B526A8DD610DF1DCB3CE64 /* Pods-SocialBlob.debug.xcconfig */,
 				F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8340F48622F9066800A73914 /* AuthViewController.swift in Sources */,
+				8340F48222F904D600A73914 /* SignUpViewController.swift in Sources */,
 				8340F45A22F86D4600A73914 /* AppDelegate.swift in Sources */,
+				8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
