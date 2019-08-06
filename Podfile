@@ -7,5 +7,6 @@ target 'SocialBlob' do
 
   # Pods for SocialBlob
   pod 'IQKeyboardManagerSwift'
+  pod 'lottie-ios'
 
 end

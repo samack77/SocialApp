@@ -46,5 +46,9 @@
 		<string>Montserrat-Regular.ttf</string>
 		<string>Montserrat-SemiBold.ttf</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to use your camera to take your profile picture or share your content</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need to access to your photo library to take your profile picture or share your content</string>
 </dict>
 </plist>
