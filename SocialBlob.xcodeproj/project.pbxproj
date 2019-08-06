@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD4B94CAFD48728120C94EC /* Pods_SocialBlob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */; };
 		8340F45A22F86D4600A73914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F45922F86D4600A73914 /* AppDelegate.swift */; };
 		8340F45F22F86D4700A73914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8340F45D22F86D4700A73914 /* Main.storyboard */; };
 		8340F46122F86D7600A73914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8340F46022F86D7600A73914 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55B526A8DD610DF1DCB3CE64 /* Pods-SocialBlob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBlob.debug.xcconfig"; path = "Target Support Files/Pods-SocialBlob/Pods-SocialBlob.debug.xcconfig"; sourceTree = "<group>"; };
 		8340F45622F86D4600A73914 /* SocialBlob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBlob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8340F45922F86D4600A73914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8340F45E22F86D4700A73914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		8340F47722F886B700A73914 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		8340F47822F886B700A73914 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		8340F47E22F8906F00A73914 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBlob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBlob.release.xcconfig"; path = "Target Support Files/Pods-SocialBlob/Pods-SocialBlob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD4B94CAFD48728120C94EC /* Pods_SocialBlob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,8 @@
 				8340F47222F884C900A73914 /* Default-568h@2x.png */,
 				8340F45822F86D4600A73914 /* SocialBlob */,
 				8340F45722F86D4600A73914 /* Products */,
+				F1FA74741B9108192E472650 /* Pods */,
+				9547C9C8C4ED4FD4FD60A994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,24 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		9547C9C8C4ED4FD4FD60A994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1FA74741B9108192E472650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B526A8DD610DF1DCB3CE64 /* Pods-SocialBlob.debug.xcconfig */,
+				F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8340F46822F86D7600A73914 /* Build configuration list for PBXNativeTarget "SocialBlob" */;
 			buildPhases = (
+				350DA094A32C80CBB512BD8F /* [CP] Check Pods Manifest.lock */,
 				8340F45222F86D4500A73914 /* Sources */,
 				8340F45322F86D4500A73914 /* Frameworks */,
 				8340F45422F86D4500A73914 /* Resources */,
+				9121A5925E6D5376D1F5E530 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +241,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350DA094A32C80CBB512BD8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialBlob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9121A5925E6D5376D1F5E530 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialBlob/Pods-SocialBlob-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialBlob/Pods-SocialBlob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8340F45222F86D4500A73914 /* Sources */ = {
@@ -364,11 +438,13 @@
 		};
 		8340F46922F86D7600A73914 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B526A8DD610DF1DCB3CE64 /* Pods-SocialBlob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VX845L7QKT;
-				INFOPLIST_FILE = SocialBlob/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialBlob/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,11 +458,13 @@
 		};
 		8340F46A22F86D7600A73914 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VX845L7QKT;
-				INFOPLIST_FILE = SocialBlob/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialBlob/Main/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
