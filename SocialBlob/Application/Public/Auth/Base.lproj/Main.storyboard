@@ -212,7 +212,7 @@
                                         <rect key="frame" x="16" y="121.5" width="288" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL ADDRESS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-z6-Ksl">
                                         <rect key="frame" x="16" y="100" width="86" height="12.5"/>
@@ -231,6 +231,9 @@
                                         <state key="normal" title="SEND">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPassword:" destination="zLZ-p9-Ld6" eventType="touchUpInside" id="qwI-Ve-wlA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -279,6 +282,9 @@
                         <viewLayoutGuide key="safeArea" id="YaV-ZB-Yid"/>
                     </view>
                     <size key="freeformSize" width="320" height="640"/>
+                    <connections>
+                        <outlet property="passwordField" destination="s0X-ap-kx3" id="PBV-KQ-io6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKr-td-ZuL" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +350,9 @@
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signUp:" destination="jMc-U0-rp7" eventType="touchUpInside" id="fyu-9z-92Q"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14r-3f-vWb">
                                         <rect key="frame" x="16" y="61.5" width="288" height="30"/>
@@ -463,6 +472,9 @@
                     <connections>
                         <outlet property="Animation" destination="s9N-Bb-ovu" id="3vc-59-b1V"/>
                         <outlet property="Picture" destination="0pD-IU-Og6" id="I5c-vC-nB3"/>
+                        <outlet property="emailField" destination="oO0-vp-EXT" id="TCP-iy-0fI"/>
+                        <outlet property="nameField" destination="14r-3f-vWb" id="ieA-8n-rLy"/>
+                        <outlet property="passwordField" destination="ViI-5f-0Pc" id="UUE-Fv-XXL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKY-jM-inc" sceneMemberID="firstResponder"/>

@@ -14,14 +14,21 @@ class SignUpViewController: AuthViewController {
     @IBOutlet weak var Animation: LOTAnimationView!
     let imagePicker = UIImagePickerController()
     
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.setupAvatarAnimation()
+        imagePicker.delegate = self
+    }
+    
+    func setupAvatarAnimation(){
         Animation.setAnimation(named: "2885-avatar-animations")
         Animation.loopAnimation = true
         Animation.play()
-        
-        imagePicker.delegate = self
     }
     
     
@@ -41,9 +48,25 @@ class SignUpViewController: AuthViewController {
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func signUp(_ sender: Any) {
+        if self.isLoading{
+            return
+        }
         
-        self.present(alert, animated: true, completion: {
-            print("completion block")
+        if self.emailField!.text!.isEmpty || self.passwordField!.text!.isEmpty || self.nameField!.text!.isEmpty {
+            self.showAlertWith(text: "All fields are required", title: "Something went wrong")
+            return
+        }
+        
+        self.switchLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+            self.switchLoading()
+            self.showAlertWith(text: "You have registered now", title: "Congratulations", handleAlert:{(alert: UIAlertAction!) in
+                    self.dismiss(animated: true, completion: nil)
+                })
         })
     }
 }
