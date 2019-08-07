@@ -22,6 +22,10 @@
 		8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */; };
 		8340F48622F9066800A73914 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48522F9066800A73914 /* AuthViewController.swift */; };
 		8340F48922F90F8F00A73914 /* 2885-avatar-animations.json in Resources */ = {isa = PBXBuildFile; fileRef = 8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */; };
+		83FFE5C822FA30D700A11578 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5C722FA30D700A11578 /* SignInViewController.swift */; };
+		83FFE5CB22FA39E500A11578 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5CA22FA39E500A11578 /* Home.storyboard */; };
+		83FFE5CD22FA3E0200A11578 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */; };
+		83FFE5CF22FA418000A11578 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5CE22FA418000A11578 /* Switcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		8340F48522F9066800A73914 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2885-avatar-animations.json"; sourceTree = "<group>"; };
+		83FFE5C722FA30D700A11578 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		83FFE5CA22FA39E500A11578 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = SocialBlob/Application/Public/Auth/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = SocialBlob/Application/Public/Auth/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		83FFE5CE22FA418000A11578 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBlob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBlob.release.xcconfig"; path = "Target Support Files/Pods-SocialBlob/Pods-SocialBlob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +129,7 @@
 				8340F46222F86D7600A73914 /* LaunchScreen.storyboard */,
 				8340F46522F86D7600A73914 /* Info.plist */,
 				8340F45922F86D4600A73914 /* AppDelegate.swift */,
+				83FFE5CE22FA418000A11578 /* Switcher.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 		8340F46F22F87CED00A73914 /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				83FFE5C922FA39C000A11578 /* Main */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -166,6 +176,7 @@
 				8340F48122F904D600A73914 /* SignUpViewController.swift */,
 				8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */,
 				8340F48522F9066800A73914 /* AuthViewController.swift */,
+				83FFE5C722FA30D700A11578 /* SignInViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -176,6 +187,16 @@
 				8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */,
 			);
 			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		83FFE5C922FA39C000A11578 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5CA22FA39E500A11578 /* Home.storyboard */,
+				83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */,
+			);
+			name = Main;
+			path = SocialBlob/Application/Private/Main;
 			sourceTree = "<group>";
 		};
 		9547C9C8C4ED4FD4FD60A994 /* Frameworks */ = {
@@ -256,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8340F46422F86D7600A73914 /* LaunchScreen.storyboard in Resources */,
+				83FFE5CB22FA39E500A11578 /* Home.storyboard in Resources */,
 				8340F47922F886B700A73914 /* Montserrat-Medium.ttf in Resources */,
 				8340F48922F90F8F00A73914 /* 2885-avatar-animations.json in Resources */,
 				8340F47B22F886B700A73914 /* Montserrat-Regular.ttf in Resources */,
@@ -327,7 +349,10 @@
 				8340F48622F9066800A73914 /* AuthViewController.swift in Sources */,
 				8340F48222F904D600A73914 /* SignUpViewController.swift in Sources */,
 				8340F45A22F86D4600A73914 /* AppDelegate.swift in Sources */,
+				83FFE5C822FA30D700A11578 /* SignInViewController.swift in Sources */,
+				83FFE5CF22FA418000A11578 /* Switcher.swift in Sources */,
 				8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */,
+				83FFE5CD22FA3E0200A11578 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
