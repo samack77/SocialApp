@@ -26,6 +26,11 @@
 		83FFE5CB22FA39E500A11578 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5CA22FA39E500A11578 /* Home.storyboard */; };
 		83FFE5CD22FA3E0200A11578 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */; };
 		83FFE5CF22FA418000A11578 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5CE22FA418000A11578 /* Switcher.swift */; };
+		83FFE5D122FA8C5600A11578 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5D022FA8C5600A11578 /* Feed.storyboard */; };
+		83FFE5D322FA8C9900A11578 /* Inbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5D222FA8C9900A11578 /* Inbox.storyboard */; };
+		83FFE5D522FA8CB400A11578 /* ShareContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5D422FA8CB400A11578 /* ShareContent.storyboard */; };
+		83FFE5D722FA8CDA00A11578 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5D622FA8CDA00A11578 /* Notifications.storyboard */; };
+		83FFE5D922FA8CF500A11578 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5D822FA8CF500A11578 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +52,14 @@
 		8340F48522F9066800A73914 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2885-avatar-animations.json"; sourceTree = "<group>"; };
 		83FFE5C722FA30D700A11578 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		83FFE5CA22FA39E500A11578 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = SocialBlob/Application/Public/Auth/Home.storyboard; sourceTree = SOURCE_ROOT; };
-		83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = SocialBlob/Application/Public/Auth/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		83FFE5CA22FA39E500A11578 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Home/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Home/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		83FFE5CE22FA418000A11578 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		83FFE5D022FA8C5600A11578 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Feed.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Feed/Feed.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5D222FA8C9900A11578 /* Inbox.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Inbox.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Inbox/Inbox.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5D422FA8CB400A11578 /* ShareContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ShareContent.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/ShareContent/ShareContent.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5D622FA8CDA00A11578 /* Notifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Notifications.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Notifications/Notifications.storyboard; sourceTree = SOURCE_ROOT; };
+		83FFE5D822FA8CF500A11578 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Profile/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		CC8B5C9E68A7B323275D69AA /* Pods_SocialBlob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialBlob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63DAFEC1AF61BAEE91D32BD /* Pods-SocialBlob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialBlob.release.xcconfig"; path = "Target Support Files/Pods-SocialBlob/Pods-SocialBlob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,11 +202,65 @@
 		83FFE5C922FA39C000A11578 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				83FFE5CA22FA39E500A11578 /* Home.storyboard */,
-				83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */,
+				83FFE5DF22FA8D9300A11578 /* Home */,
+				83FFE5DE22FA8D8B00A11578 /* Feed */,
+				83FFE5DD22FA8D8500A11578 /* Inbox */,
+				83FFE5DC22FA8D7E00A11578 /* ShareContent */,
+				83FFE5DB22FA8D5200A11578 /* Notifications */,
+				83FFE5DA22FA8D3F00A11578 /* Profile */,
 			);
 			name = Main;
 			path = SocialBlob/Application/Private/Main;
+			sourceTree = "<group>";
+		};
+		83FFE5DA22FA8D3F00A11578 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5D822FA8CF500A11578 /* Profile.storyboard */,
+			);
+			name = Profile;
+			path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Profile;
+			sourceTree = "<group>";
+		};
+		83FFE5DB22FA8D5200A11578 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5D622FA8CDA00A11578 /* Notifications.storyboard */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		83FFE5DC22FA8D7E00A11578 /* ShareContent */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5D422FA8CB400A11578 /* ShareContent.storyboard */,
+			);
+			path = ShareContent;
+			sourceTree = "<group>";
+		};
+		83FFE5DD22FA8D8500A11578 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5D222FA8C9900A11578 /* Inbox.storyboard */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		83FFE5DE22FA8D8B00A11578 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5D022FA8C5600A11578 /* Feed.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		83FFE5DF22FA8D9300A11578 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83FFE5CA22FA39E500A11578 /* Home.storyboard */,
+				83FFE5CC22FA3E0200A11578 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		9547C9C8C4ED4FD4FD60A994 /* Frameworks */ = {
@@ -278,11 +342,16 @@
 			files = (
 				8340F46422F86D7600A73914 /* LaunchScreen.storyboard in Resources */,
 				83FFE5CB22FA39E500A11578 /* Home.storyboard in Resources */,
+				83FFE5D522FA8CB400A11578 /* ShareContent.storyboard in Resources */,
+				83FFE5D122FA8C5600A11578 /* Feed.storyboard in Resources */,
 				8340F47922F886B700A73914 /* Montserrat-Medium.ttf in Resources */,
 				8340F48922F90F8F00A73914 /* 2885-avatar-animations.json in Resources */,
+				83FFE5D722FA8CDA00A11578 /* Notifications.storyboard in Resources */,
 				8340F47B22F886B700A73914 /* Montserrat-Regular.ttf in Resources */,
 				8340F47A22F886B700A73914 /* Montserrat-Bold.ttf in Resources */,
 				8340F47F22F8906F00A73914 /* ColorAssets.xcassets in Resources */,
+				83FFE5D922FA8CF500A11578 /* Profile.storyboard in Resources */,
+				83FFE5D322FA8C9900A11578 /* Inbox.storyboard in Resources */,
 				8340F47322F884C900A73914 /* Default-568h@2x.png in Resources */,
 				8340F46122F86D7600A73914 /* Assets.xcassets in Resources */,
 				8340F47C22F886B700A73914 /* Montserrat-SemiBold.ttf in Resources */,
