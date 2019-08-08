@@ -6,17 +6,21 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="yik-6B-hT3">
             <objects>
-                <tabBarController storyboardIdentifier="homeTabs" automaticallyAdjustsScrollViewInsets="NO" id="TWV-pO-QxT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="homeTabs" automaticallyAdjustsScrollViewInsets="NO" id="TWV-pO-QxT" customClass="HomeTabBarController" customModule="SocialBlob" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tny-Fx-3do">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="ItemSelected"/>
                     </tabBar>
                     <connections>
                         <segue destination="gDZ-ZX-Pse" kind="relationship" relationship="viewControllers" id="Cj9-bg-s6y"/>
@@ -81,4 +85,9 @@
             <point key="canvasLocation" x="484" y="435"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="ItemSelected">
+            <color red="0.086274509803921567" green="0.12156862745098039" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

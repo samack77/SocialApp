@@ -14,7 +14,7 @@ class Switcher {
         let status = UserDefaults.standard.bool(forKey: "status")
         var rootVC : UIViewController?
         if(status == true){
-            rootVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "homeTabs") as! UITabBarController
+            rootVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "homeTabs") as! HomeTabBarController
         }else{
             rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signIn") as! SignInViewController
         }
