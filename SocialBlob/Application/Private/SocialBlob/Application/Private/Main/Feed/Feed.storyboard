@@ -26,15 +26,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="utv-rb-6h9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="utv-rb-6h9">
                                 <rect key="frame" x="8" y="148" width="398" height="665"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="270" id="3a2-LZ-gea" customClass="PostTableViewCell" customModule="SocialBlob" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="398" height="270"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="334" id="3a2-LZ-gea" customClass="PostTableViewCell" customModule="SocialBlob" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="398" height="334"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3a2-LZ-gea" id="oPp-RP-FoK">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="269.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="333.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TO9-O8-enD">
@@ -63,29 +63,40 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERF-xm-uMa">
-                                                    <rect key="frame" x="59" y="87.5" width="326" height="169"/>
+                                                    <rect key="frame" x="59" y="87.5" width="326" height="202"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bo-nN-8GH">
+                                                    <rect key="frame" x="59" y="300.5" width="24" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9bo-nN-8GH" secondAttribute="height" multiplier="12:11" id="BhV-Zg-jBh"/>
+                                                        <constraint firstAttribute="width" constant="24" id="fCp-ay-lQh"/>
+                                                    </constraints>
+                                                    <state key="normal" image="not_like_icon"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TO9-O8-enD" firstAttribute="leading" secondItem="oPp-RP-FoK" secondAttribute="leading" constant="13" id="40M-lj-HCb"/>
+                                                <constraint firstAttribute="bottom" secondItem="9bo-nN-8GH" secondAttribute="bottom" constant="11" id="8x8-bw-Dwg"/>
                                                 <constraint firstAttribute="trailing" secondItem="ERF-xm-uMa" secondAttribute="trailing" constant="13" id="A0Y-7A-G3Z"/>
                                                 <constraint firstItem="4Xo-Kq-oYg" firstAttribute="leading" secondItem="CiD-3j-hCw" secondAttribute="leading" id="I19-Wd-8EA"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="CiD-3j-hCw" secondAttribute="trailing" constant="13" id="JGz-sl-fc6"/>
                                                 <constraint firstItem="ERF-xm-uMa" firstAttribute="leading" secondItem="IXk-Wc-YlR" secondAttribute="leading" id="T8s-lR-jSb"/>
+                                                <constraint firstAttribute="bottom" secondItem="ERF-xm-uMa" secondAttribute="bottom" constant="44" id="VUI-Lb-wxE"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4Xo-Kq-oYg" secondAttribute="trailing" constant="13" id="XOJ-e3-dll"/>
                                                 <constraint firstItem="TO9-O8-enD" firstAttribute="top" secondItem="oPp-RP-FoK" secondAttribute="top" constant="13" id="eCt-OF-OgU"/>
-                                                <constraint firstAttribute="bottom" secondItem="ERF-xm-uMa" secondAttribute="bottom" constant="13" id="fnk-qP-XtV"/>
                                                 <constraint firstItem="CiD-3j-hCw" firstAttribute="top" secondItem="TO9-O8-enD" secondAttribute="top" id="n3Y-fJ-nCd"/>
                                                 <constraint firstItem="CiD-3j-hCw" firstAttribute="leading" secondItem="TO9-O8-enD" secondAttribute="trailing" constant="10" id="oYs-Cc-okX"/>
                                                 <constraint firstItem="4Xo-Kq-oYg" firstAttribute="top" secondItem="CiD-3j-hCw" secondAttribute="bottom" constant="4" id="qg2-Ob-kL7"/>
                                                 <constraint firstItem="IXk-Wc-YlR" firstAttribute="leading" secondItem="4Xo-Kq-oYg" secondAttribute="leading" id="rA0-mN-tza"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="IXk-Wc-YlR" secondAttribute="trailing" constant="13" id="rpj-NY-gMD"/>
+                                                <constraint firstItem="9bo-nN-8GH" firstAttribute="leading" secondItem="ERF-xm-uMa" secondAttribute="leading" id="tq7-X4-wtO"/>
                                                 <constraint firstItem="ERF-xm-uMa" firstAttribute="top" secondItem="IXk-Wc-YlR" secondAttribute="bottom" constant="11" id="xFp-B3-ERn"/>
                                                 <constraint firstItem="IXk-Wc-YlR" firstAttribute="top" secondItem="4Xo-Kq-oYg" secondAttribute="bottom" constant="11" id="xS4-pE-bjX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="date_st" destination="4Xo-Kq-oYg" id="L6x-yZ-70a"/>
+                                            <outlet property="likeBtn" destination="9bo-nN-8GH" id="WSe-qt-e7I"/>
                                             <outlet property="post_picture" destination="ERF-xm-uMa" id="yEL-qh-WAm"/>
                                             <outlet property="profile_picture" destination="TO9-O8-enD" id="Sx7-HN-vfQ"/>
                                             <outlet property="text_post" destination="IXk-Wc-YlR" id="Rss-vJ-QIg"/>
@@ -135,5 +146,6 @@
     </scenes>
     <resources>
         <image name="home" width="26" height="24"/>
+        <image name="not_like_icon" width="24" height="22"/>
     </resources>
 </document>

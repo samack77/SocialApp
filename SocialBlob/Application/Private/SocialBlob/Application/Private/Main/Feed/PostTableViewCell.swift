@@ -10,12 +10,15 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var date_st: UILabel!
     @IBOutlet weak var text_post: UILabel!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var profile_picture: UIImageView!
     @IBOutlet weak var post_picture: UIImageView!
-        
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

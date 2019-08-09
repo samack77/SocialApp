@@ -35,15 +35,6 @@ class FeedViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
-        
-//        Alamofire.request(.GET, method: feed_url, parameters: nil)
-//            .response { (request, response, data, error) in
-//                println(data) // if you want to check XML data in debug window.
-//                var xml = SWXMLHash.parse(data!)
-//                for elem in xml["rss"]["channel"]["item"].all {
-//                    print(elem["title"].element!.text!)
-//                }
-//        }
     }
 }
 
@@ -55,6 +46,19 @@ extension FeedViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    @objc func handleLikeAction(tag sender: UIButton){
+        var post = self.data[sender.tag]
+        post.liked = !post.liked
+        self.data[sender.tag] = post
+        
+        UIView.performWithoutAnimation {
+            let loc = self.tableView.contentOffset
+            self.tableView.reloadRows(at: [IndexPath.init(row: sender.tag, section: 0)], with: .none)
+            self.tableView.contentOffset = loc
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count
     }
@@ -71,8 +75,27 @@ extension FeedViewController: UITableViewDataSource{
         
         if !post.picture_name.isEmpty{
             let url_picture_image = URL(string: post.picture_name)!
-            cell.post_picture.af_setImage(withURL: url_picture_image, placeholderImage: UIImage(named: "post_image")!)
+            cell.post_picture.af_setImage(withURL: url_picture_image,
+                placeholderImage: UIImage(named: "post_image")!, filter: nil,
+                imageTransition: UIImageView.ImageTransition.noTransition,
+                runImageTransitionIfCached: false) { response in
+                    if response.response != nil {
+                        // Force the cell update
+                        self.tableView.beginUpdates()
+                        self.tableView.endUpdates()
+                    }
+                }
         }
+        
+        if post.liked{
+            cell.likeBtn.setImage(UIImage(named: "like_icon"), for: .normal)
+        }else{
+            cell.likeBtn.setImage(UIImage(named: "not_like_icon"), for: .normal)
+        }
+        
+        cell.likeBtn.tag = indexPath.row
+        cell.likeBtn.addTarget(self, action: #selector(FeedViewController.handleLikeAction(tag:)), for: .touchUpInside)
+        
         return cell
     }
 }
