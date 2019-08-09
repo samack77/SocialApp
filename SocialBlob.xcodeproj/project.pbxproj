@@ -22,6 +22,9 @@
 		8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */; };
 		8340F48622F9066800A73914 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340F48522F9066800A73914 /* AuthViewController.swift */; };
 		8340F48922F90F8F00A73914 /* 2885-avatar-animations.json in Resources */ = {isa = PBXBuildFile; fileRef = 8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */; };
+		835E13A022FDB9D4005F6C5C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E139F22FDB9D4005F6C5C /* FeedViewController.swift */; };
+		835E13A222FDBBE6005F6C5C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E13A122FDBBE6005F6C5C /* Post.swift */; };
+		835E13A422FDBFAA005F6C5C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E13A322FDBFAA005F6C5C /* PostTableViewCell.swift */; };
 		839345D322FBB7EA00BEEB91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839345D222FBB7EA00BEEB91 /* ProfileViewController.swift */; };
 		83FFE5C822FA30D700A11578 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FFE5C722FA30D700A11578 /* SignInViewController.swift */; };
 		83FFE5CB22FA39E500A11578 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FFE5CA22FA39E500A11578 /* Home.storyboard */; };
@@ -52,6 +55,9 @@
 		8340F48322F9062600A73914 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		8340F48522F9066800A73914 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		8340F48822F90F8F00A73914 /* 2885-avatar-animations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "2885-avatar-animations.json"; sourceTree = "<group>"; };
+		835E139F22FDB9D4005F6C5C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		835E13A122FDBBE6005F6C5C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		835E13A322FDBFAA005F6C5C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		839345D222FBB7EA00BEEB91 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		83FFE5C722FA30D700A11578 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		83FFE5CA22FA39E500A11578 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Home.storyboard; path = SocialBlob/Application/Private/SocialBlob/Application/Private/Main/Home/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -253,6 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				83FFE5D022FA8C5600A11578 /* Feed.storyboard */,
+				835E139F22FDB9D4005F6C5C /* FeedViewController.swift */,
+				835E13A122FDBBE6005F6C5C /* Post.swift */,
+				835E13A322FDBFAA005F6C5C /* PostTableViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -396,14 +405,20 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SocialBlob/Pods-SocialBlob-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835E13A422FDBFAA005F6C5C /* PostTableViewCell.swift in Sources */,
 				8340F48622F9066800A73914 /* AuthViewController.swift in Sources */,
+				835E13A022FDB9D4005F6C5C /* FeedViewController.swift in Sources */,
 				8340F48222F904D600A73914 /* SignUpViewController.swift in Sources */,
 				8340F45A22F86D4600A73914 /* AppDelegate.swift in Sources */,
 				83FFE5C822FA30D700A11578 /* SignInViewController.swift in Sources */,
@@ -426,6 +443,7 @@
 				8340F48422F9062600A73914 /* ForgotPasswordViewController.swift in Sources */,
 				839345D322FBB7EA00BEEB91 /* ProfileViewController.swift in Sources */,
 				83FFE5CD22FA3E0200A11578 /* HomeViewController.swift in Sources */,
+				835E13A222FDBBE6005F6C5C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
